@@ -148,5 +148,6 @@ vendor/firmware/bcm4334/fw_bcmdhd.bin
 bin/wlbwservice
 lib/libwlbwservice.so
 
-# Woloserviced
+# WoloService
+-app/WoloService/WoloService.apk
 bin/woloserviced
