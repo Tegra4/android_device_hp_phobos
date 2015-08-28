@@ -264,12 +264,6 @@ service btmacwriter /system/bin/btmacwriter
     group bluetooth net_bt_admin
     oneshot
 
-# wifiloader - set the wifi commchip_id accordingly
-service wifiloader /system/bin/wifi_loader.sh
-    class main
-    user root
-    group root
-
 # Mount usb drives as /usbdrive. Generally usb drives are formatted with FAT
 # filesystem, so we support FAT as of now.
 on device-added-/sys/block/sda
