@@ -91,6 +91,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/modules/bcmdhd.ko:system/lib/modules/bcmdhd.ko \
     $(LOCAL_PATH)/modules/cfg80211.ko:system/lib/modules/cfg80211.ko
 
+# NV OMX config
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/enctune.conf:system/etc/enctune.conf
+
 # Prebuilt kernel
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/kernel:kernel
@@ -112,5 +116,9 @@ PRODUCT_PACKAGES += \
     dhcpcd.conf \
     hostapd \
     wpa_supplicant
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/wifi/nvram_4334.txt:system/etc/nvram_4334.txt
+
 
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)

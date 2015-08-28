@@ -53,16 +53,14 @@ EXTENDED_FONT_FOOTPRINT := true
 # Malloc
 MALLOC_IMPL := dlmalloc
 
-# This device includes a partition TRD that mounts to vendor/app/ we may
-# be able to use this as a vendor partition to store proprietary files and firmware to save system space
-# Size 367001600 roughly 350mb
-
 # Partition
+TARGET_COPY_OUT_VENDOR := vendor
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 8388608
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16777216
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 805306368
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 5385486336
+BOARD_VENDORIMAGE_PARTITION_SIZE := 367001600
 BOARD_FLASH_BLOCK_SIZE := 4096
 
 # Pre-L blob support

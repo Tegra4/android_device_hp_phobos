@@ -179,7 +179,7 @@ on boot
     insmod /system/lib/modules/bcmdhd.ko
 
 # CPU Boost: boost CPU on input events
-service input-cfboost /system/bin/input_cfboost_init.sh
+service input-cfboost /vendor/bin/input_cfboost_init.sh
     class main
     user root
     group root
@@ -258,7 +258,7 @@ service fuse_usbdrive2 /system/bin/sdcard -u 1023 -g 1023 -w 1023 -d /mnt/media_
     disabled
 
 # btmacwriter - to create unique BD address
-service btmacwriter /system/bin/btmacwriter
+service btmacwriter /vendor/bin/btmacwriter
     class main
     user bluetooth
     group bluetooth net_bt_admin
@@ -288,7 +288,7 @@ on property:init.svc.hciattach=stopped
     write /sys/devices/platform/reg-userspace-consumer.1/state disabled
 
 # Enable PowerService
-service powerservice /system/bin/powerservice
+service powerservice /vendor/bin/powerservice
     class main
     user system
     group system
@@ -296,32 +296,32 @@ service powerservice /system/bin/powerservice
 # Enable rbe
 # thresIncr:50  thresIncrCntMax:6  thresDecr:70  thresDecrCntMax:2
 # The change from default is the thresDecrCntMax.  Default is 3.
-service wlbwservice /system/bin/wlbwservice -t 50 6 70 2
+service wlbwservice /vendor/bin/wlbwservice -t 50 6 70 2
     class main
     user system
     group system inet net_admin
 
 # Raydium touch setting
-service rm_ts_service /system/bin/rm_ts_server
+service rm_ts_service /vendor/bin/rm_ts_server
     class main
     user system
     group system input
 
 # unified scaling setup
-service ussr_setup /system/bin/ussr_setup.sh
+service ussr_setup /vendor/bin/ussr_setup.sh
     class main
     user root
     group root
     oneshot
 
 # unified scaling process
-service ussrd /system/bin/ussrd
+service ussrd /vendor/bin/ussrd
     user system
     group system
     class main
 
 # unified scaling watchdog process
-service usdwatchdog /system/bin/usdwatchdog --wait 30
+service usdwatchdog /vendor/bin/usdwatchdog --wait 30
     user system
     group system
     class main
@@ -363,13 +363,13 @@ service wpa_supplicant /system/bin/wpa_supplicant \
     oneshot
 
 # wolong service
-service woloservice /system/bin/woloserviced
+service woloservice /vendor/bin/woloserviced
     class main
     socket wolosocket stream 666 system system
     socket wolosocketb stream 666 system system
 
 # start tf_daemon service
-service tf_daemon /system/bin/tf_daemon -storageDir /data/tf -d
+service tf_daemon /vendor/bin/tf_daemon -storageDir /data/tf -d
     class main
     user root
     group shell
