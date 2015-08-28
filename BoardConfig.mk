@@ -25,7 +25,7 @@ TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := cortex-a15
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := phobos
+TARGET_BOOTLOADER_BOARD_NAME := dalmore
 TARGET_NO_BOOTLOADER := true
 
 # Platform
