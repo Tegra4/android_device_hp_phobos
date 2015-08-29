@@ -111,6 +111,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     dhcpcd.conf \
     hostapd \
-    wpa_supplicant
+    wpa_supplicant \
+    wpa_supplicant.conf
 
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
