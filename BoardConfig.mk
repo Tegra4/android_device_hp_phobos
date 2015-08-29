@@ -32,7 +32,7 @@ TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := tegra4
 
 # Kernel
-#BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
 #TARGET_KERNEL_SOURCE := kernel/hp/phobos
 #TARGET_KERNEL_CONFIG := cyanogenmod_phobos_defconfig
 TARGET_PREBUILT_KERNEL := device/hp/phobos/kernel
@@ -92,3 +92,5 @@ BOARD_HAS_NO_REAL_SDCARD := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 RECOVERY_SDCARD_ON_DATA := true
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/pwm-backlight/brightness"
+TW_NO_BATT_PERCENT := true
+TW_NO_USB_STORAGE := true
