@@ -101,6 +101,7 @@ PRODUCT_PACKAGES += \
     init.dalmore.rc \
     init.dalmore.usb.rc \
     init.hdcp.rc \
+    power.dalmore.rc \
     ueventd.dalmore.rc
 
 # USB
