@@ -267,19 +267,19 @@ service btmacwriter /system/bin/btmacwriter
 # Mount usb drives as /usbdrive. Generally usb drives are formatted with FAT
 # filesystem, so we support FAT as of now.
 on device-added-/sys/block/sda
-  mount vfat /dev/block/sda /mnt/media_rw/usbdrive
+    mount auto /dev/block/sda /mnt/media_rw/usbdrive
 
 on device-removed-/sys/block/sda
     umount /mnt/media_rw/usbdrive
     
 on device-added-/sys/block/sdb
-    mount vfat /dev/block/sdb /mnt/media_rw/usbdrive1
+    mount auto /dev/block/sdb /mnt/media_rw/usbdrive1
 
 on device-removed-/sys/block/sdb
     umount /mnt/media_rw/usbdrive1
     
 on device-added-/sys/block/sdc
-    mount vfat /dev/block/sdc /mnt/media_rw/usbdrive2
+    mount auto /dev/block/sdc /mnt/media_rw/usbdrive2
 
 on device-removed-/sys/block/sdc
     umount /mnt/media_rw/usbdrive2
