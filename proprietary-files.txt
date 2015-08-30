@@ -1,7 +1,6 @@
 # Audio
 lib/hw/audio_policy.tegra4.so
 lib/hw/audio.primary.tegra4.so
-lib/libaudioavp.so
 lib/libnvaudioservice.so
 lib/libnvcapaudioservice.so
 lib/libnvcapclk.so
@@ -17,6 +16,9 @@ lib/hw/camera.tegra4.so
 lib/libfcamdng.so
 lib/libnvcamerahdr.so
 lib/libnvcam_imageencoder.so
+lib/libnvmm_camera.so
+lib/libnvodm_imager.so
+lib/libnvsm.so
 lib/libopencv24_tegra.so
 lib/libtbb.so
 
@@ -31,29 +33,29 @@ vendor/lib/mediadrm/libwvdrmengine.so
 
 # Graphics
 etc/enctune.conf
-lib/egl/libEGL_tegra_impl.so
 lib/egl/libEGL_tegra.so
-lib/egl/libGLESv1_CM_tegra_impl.so
 lib/egl/libGLESv1_CM_tegra.so
-lib/egl/libGLESv2_tegra_impl.so
 lib/egl/libGLESv2_tegra.so
 lib/hw/gralloc.tegra4.so
 lib/hw/hwcomposer.tegra4.so
 lib/libardrv_dynamic.so
+lib/libaudioavp.so
 lib/libcgdrv.so
 lib/libcplconnectclient.so
+lib/libEGL_tegra_impl.so
+lib/libGLESv1_CM_tegra_impl.so
+lib/libGLESv2_tegra_impl.so
 lib/libnvapputil.so
 lib/libnvavp.so
 lib/libnvblit.so
 lib/libnvcap_video.so
-lib/libnvmm_camera.so
-lib/libnvmm_audio.so
 lib/libnvcms.so
 lib/libnvcpl.so
 lib/libnvddk_2d.so
 lib/libnvddk_2d_v2.so
 lib/libnvfusebypass.so
 lib/libnvglsi.so
+lib/libnvmm_audio.so
 lib/libnvmm_contentpipe.so
 lib/libnvmm_image.so
 lib/libnvmmlite_audio.so
@@ -71,7 +73,6 @@ lib/libnvmm_utils.so
 lib/libnvmm_vc1_video.so
 lib/libnvmm_video.so
 lib/libnvmm_writer.so
-lib/libnvodm_imager.so
 lib/libnvodm_query.so
 lib/libnvoice.so
 lib/libnvomxadaptor.so
@@ -81,14 +82,12 @@ lib/libnvos.so
 lib/libnvparser.so
 lib/libnvrm_graphics.so
 lib/libnvrm.so
-lib/libnvsm.so
 lib/libnvtestio.so
 lib/libnvtestresults.so
 lib/libnvtnr.so
 lib/libnvtvmr.so
 lib/libnvwinsys.so
 lib/libnvwsi.so
-lib/libsecure_hdcp_up.so
 lib/libstagefrighthw.so
 lib/libtsechdcp.so
 lib/libtsec_wrapper.so
@@ -99,7 +98,6 @@ etc/firmware/tegra11x/nvhost_tsec.fw
 etc/firmware/nvavp_aud_ucode.bin
 etc/firmware/nvavp_os_0ff00000.bin
 etc/firmware/nvavp_os_eff00000.bin
-etc/firmware/nvavp_vid_ucode.bin
 etc/firmware/nvavp_vid_ucode_alt.bin
 
 # HDCP SRM
