@@ -113,9 +113,6 @@ lib/hw/keystore.tegra4.so
 lib/libtf_crypto_sst.so
 
 # Power
-bin/powerservice
-lib/libpowerservice_client.so
-lib/libpowerservice.so
 vendor/lib/hw/power.phobos.so
 
 # Touchscreen

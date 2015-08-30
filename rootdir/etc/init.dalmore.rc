@@ -287,12 +287,6 @@ on device-removed-/sys/block/sdc
 on property:init.svc.hciattach=stopped
     write /sys/devices/platform/reg-userspace-consumer.1/state disabled
 
-# Enable PowerService
-service powerservice /system/bin/powerservice
-    class main
-    user system
-    group system
-
 # Enable rbe
 # thresIncr:50  thresIncrCntMax:6  thresDecr:70  thresDecrCntMax:2
 # The change from default is the thresDecrCntMax.  Default is 3.
