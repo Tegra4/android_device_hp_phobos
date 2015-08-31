@@ -370,12 +370,6 @@ on property:wifi.commchip_id=7
     symlink /system/etc/nvram_4334_id.txt /data/misc/wifi/firmware/nvram_id.txt
     insmod /system/lib/modules/bcmdhd.ko
 
-# wolong service
-service woloservice /system/bin/woloserviced
-    class main
-    socket wolosocket stream 666 system system
-    socket wolosocketb stream 666 system system
-
 # start tf_daemon service
 service tf_daemon /system/bin/tf_daemon -storageDir /data/tf -d
     class main
