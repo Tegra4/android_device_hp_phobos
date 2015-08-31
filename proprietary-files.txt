@@ -136,7 +136,10 @@ lib/libgov_tbc.so
 lib/libussrd.so
 
 # Wifi
-etc/nvram_4334.txt
+bin/wifi_loader.sh
+etc/nvram_4334_id.txt
+etc/nvram_4334_us.txt
+etc/nvram_4334_ww.txt
 vendor/firmware/bcm4334/fw_bcmdhd.bin
 
 # Wlbwservice

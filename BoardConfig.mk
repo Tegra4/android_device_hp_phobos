@@ -81,9 +81,9 @@ BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_bcmdhd
 BOARD_WLAN_DEVICE                := bcmdhd
 BOARD_HOSTAPD_DRIVER             := NL80211
 BOARD_HOSTAPD_PRIVATE_LIB        := lib_driver_cmd_bcmdhd
-WIFI_DRIVER_FW_PATH_PARAM        := "/sys/module/bcmdhd/parameters/firmware_path"
-WIFI_DRIVER_FW_PATH_AP           := "/vendor/firmware/bcm4334/fw_bcmdhd.bin"
-WIFI_DRIVER_FW_PATH_STA          := "/vendor/firmware/bcm4334/fw_bcmdhd.bin"
+WIFI_DRIVER_FW_PATH_STA          := "/data/misc/wifi/firmware/fw_bcmdhd.bin"
+WIFI_DRIVER_FW_PATH_AP           := "/data/misc/wifi/firmware/fw_bcmdhd_apsta.bin"
+WIFI_DRIVER_MODULE_ARG           := "iface_name=wlan0"
 
 TW_THEME := landscape_hdpi
 BOARD_HAS_NO_REAL_SDCARD := true
