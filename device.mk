@@ -90,15 +90,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs.xml:system/etc/media_codecs.xml \
     $(LOCAL_PATH)/media/media_profiles.xml:system/etc/media_profiles.xml
 
-# Modules
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/modules/bcmdhd.ko:system/lib/modules/bcmdhd.ko \
-    $(LOCAL_PATH)/modules/cfg80211.ko:system/lib/modules/cfg80211.ko
-
-# Prebuilt kernel
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/kernel:kernel
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.dalmore \
