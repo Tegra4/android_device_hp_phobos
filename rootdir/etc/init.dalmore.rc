@@ -174,9 +174,6 @@ on boot
     write /data/misc/wminput/connected 0
     chmod 0666 /data/misc/wminput/connected
 
-    # Load WiFi driver
-    insmod /system/lib/modules/cfg80211.ko
-
 # CPU Boost: boost CPU on input events
 service input-cfboost /system/bin/input_cfboost_init.sh
     class main
@@ -262,12 +259,6 @@ service btmacwriter /system/bin/btmacwriter
     user bluetooth
     group bluetooth net_bt_admin
     oneshot
-
-# wifiloader - set the wifi commchip_id accordingly
-service wifiloader /system/bin/wifi_loader.sh
-    class main
-    user root
-    group root
 
 # Mount usb drives as /usbdrive. Generally usb drives are formatted with FAT
 # filesystem, so we support FAT as of now.
@@ -360,15 +351,6 @@ service wpa_supplicant /system/bin/wpa_supplicant \
     socket wpa_wlan0 dgram 660 wifi wifi
     disabled
     oneshot
-
-# bcm4334 chipset
-on property:wifi.commchip_id=7
-    symlink /system/vendor/firmware/bcm4334/fw_bcmdhd.bin /data/misc/wifi/firmware/fw_bcmdhd.bin
-    symlink /system/vendor/firmware/bcm4334/fw_bcmdhd.bin /data/misc/wifi/firmware/fw_bcmdhd_apsta.bin
-    symlink /system/etc/nvram_4334_ww.txt /data/misc/wifi/firmware/nvram_ww.txt
-    symlink /system/etc/nvram_4334_us.txt /data/misc/wifi/firmware/nvram_us.txt
-    symlink /system/etc/nvram_4334_id.txt /data/misc/wifi/firmware/nvram_id.txt
-    insmod /system/lib/modules/bcmdhd.ko
 
 # start tf_daemon service
 service tf_daemon /system/bin/tf_daemon -storageDir /data/tf -d
