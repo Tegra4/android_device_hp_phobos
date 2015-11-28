@@ -139,7 +139,3 @@ lib/libussrd.so
 etc/nvram_4334.txt
 vendor/firmware/bcm4334/fw_bcmdhd.bin
 vendor/firmware/bcm4334/fw_bcmdhd_apsta.bin
-
-# Wlbwservice
-bin/wlbwservice
-lib/libwlbwservice.so
