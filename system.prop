@@ -4,9 +4,6 @@ wifi.interface=wlan0
 ap.interface=wlan0
 ro.sf.lcd_density=160
 
-# GPU producer to CPU consumer not supported
-ro.bq.gpu_to_cpu_unsupported=1
-
 # from dalmore, check nvidia
 persist.tegra.nvmmlite = 1
 

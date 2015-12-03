@@ -1,6 +1,7 @@
 # Audio
 lib/hw/audio_policy.tegra4.so
 lib/hw/audio.primary.tegra4.so
+lib/libaudioavp.so
 lib/libnvaudioservice.so
 lib/libnvcapaudioservice.so
 lib/libnvcapclk.so
@@ -33,8 +34,11 @@ vendor/lib/mediadrm/libwvdrmengine.so
 
 # Graphics
 etc/enctune.conf
+lib/egl/libEGL_tegra_impl.so
 lib/egl/libEGL_tegra.so
+lib/egl/libGLESv1_CM_tegra_impl.so
 lib/egl/libGLESv1_CM_tegra.so
+lib/egl/libGLESv2_tegra_impl.so
 lib/egl/libGLESv2_tegra.so
 lib/hw/gralloc.tegra4.so
 lib/hw/hwcomposer.tegra4.so
@@ -42,9 +46,6 @@ lib/libardrv_dynamic.so
 lib/libaudioavp.so
 lib/libcgdrv.so
 lib/libcplconnectclient.so
-lib/libEGL_tegra_impl.so
-lib/libGLESv1_CM_tegra_impl.so
-lib/libGLESv2_tegra_impl.so
 lib/libnvapputil.so
 lib/libnvavp.so
 lib/libnvblit.so
@@ -88,6 +89,7 @@ lib/libnvtnr.so
 lib/libnvtvmr.so
 lib/libnvwinsys.so
 lib/libnvwsi.so
+lib/libsecure_hdcp_up.so
 lib/libstagefrighthw.so
 lib/libtsechdcp.so
 lib/libtsec_wrapper.so
@@ -98,6 +100,7 @@ etc/firmware/tegra11x/nvhost_tsec.fw
 etc/firmware/nvavp_aud_ucode.bin
 etc/firmware/nvavp_os_0ff00000.bin
 etc/firmware/nvavp_os_eff00000.bin
+etc/firmware/nvavp_vid_ucode.bin
 etc/firmware/nvavp_vid_ucode_alt.bin
 
 # HDCP SRM
