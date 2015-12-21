@@ -77,10 +77,11 @@ TARGET_RECOVERY_FSTAB := device/hp/phobos/rootdir/etc/fstab.dalmore
 
 # SELinux
 include device/nvidia/sepolicy/sepolicy.mk
-#BOARD_SEPOLICY_DIRS += \
-#    device/hp/phobos/sepolicy
+BOARD_SEPOLICY_DIRS += \
+    device/hp/phobos/sepolicy
 
-#BOARD_SEPOLICY_UNION += \
+BOARD_SEPOLICY_UNION += \
+    file_contexts
 
 # Wifi
 BOARD_WPA_SUPPLICANT_DRIVER      := NL80211
