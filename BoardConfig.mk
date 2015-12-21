@@ -75,6 +75,13 @@ COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 TARGET_RECOVERY_DEVICE_DIRS += device/hp/phobos
 TARGET_RECOVERY_FSTAB := device/hp/phobos/rootdir/etc/fstab.dalmore
 
+# SELinux
+include device/nvidia/sepolicy/sepolicy.mk
+#BOARD_SEPOLICY_DIRS += \
+#    device/hp/phobos/sepolicy
+
+#BOARD_SEPOLICY_UNION += \
+
 # Wifi
 BOARD_WPA_SUPPLICANT_DRIVER      := NL80211
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
