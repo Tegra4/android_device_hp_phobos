@@ -131,8 +131,6 @@ lib/librm_ts_service.so
 bin/tf_daemon
 
 # Unified scaling
-bin/usdwatchdog
-bin/ussrd
 bin/ussr_setup.sh
 lib/libgov_combinator.so
 lib/libgov_cores.so
@@ -140,6 +138,8 @@ lib/libgov_cpufs.so
 lib/libgov_gpufs.so
 lib/libgov_tbc.so
 lib/libussrd.so
+vendor/bin/usdwatchdog
+vendor/bin/ussrd
 
 # Wifi
 etc/nvram_4334.txt
