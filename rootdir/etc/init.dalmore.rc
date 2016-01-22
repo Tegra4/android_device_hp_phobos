@@ -283,12 +283,6 @@ on device-removed-/sys/block/sdc
 on property:init.svc.hciattach=stopped
     write /sys/devices/platform/reg-userspace-consumer.1/state disabled
 
-# Enable PowerService
-service powerservice /system/bin/powerservice
-    class main
-    user system
-    group system
-
 # Raydium touch setting
 service rm_ts_service /system/bin/rm_ts_server
     class main
