@@ -79,12 +79,53 @@ TARGET_RECOVERY_DEVICE_DIRS += device/hp/phobos
 TARGET_RECOVERY_FSTAB := device/hp/phobos/rootdir/etc/fstab.dalmore
 
 # SELinux
-include device/nvidia/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += \
     device/hp/phobos/sepolicy
 
 BOARD_SEPOLICY_UNION += \
-    file_contexts
+    app.te \
+    bluetooth.te \
+    bootanim.te \
+    cpuvoltcap.te \
+    debuggerd.te \
+    device.te \
+    domain.te \
+    drmserver.te \
+    dumpstate.te \
+    file_contexts \
+    file.te \
+    genfs_contexts \
+    gpload.te \
+    gpsd.te \
+    healthd.te \
+    hostapd.te \
+    init.te \
+    installd.te \
+    mediaserver.te \
+    netd.te \
+    platform_app.te \
+    property_contexts \
+    property.te \
+    service_contexts \
+    set_hwui.te \
+    setup_fs.te \
+    shell.te \
+    surfaceflinger.te \
+    system_app.te \
+    system_server.te \
+    tee.te \
+    te_macros \
+    ueventd.te \
+    untrusted_app.te \
+    usb.te \
+    usdwatchdog.te \
+    ussrd.te \
+    ussr_setup.te \
+    vold.te \
+    wifi_loader.te \
+    wl18xx.te \
+    wpa.te \
+    zygote.te
 
 # Wifi
 BOARD_WPA_SUPPLICANT_DRIVER      := NL80211
