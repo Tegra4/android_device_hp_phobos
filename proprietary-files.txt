@@ -47,6 +47,8 @@ lib/libaudioavp.so
 lib/libcgdrv.so
 lib/libcplconnectclient.so
 lib/libnvapputil.so
+lib/libnvasfparserhal.so
+lib/libnvaviparserhal.so
 lib/libnvavp.so
 lib/libnvblit.so
 lib/libnvcap_video.so
@@ -56,7 +58,9 @@ lib/libnvddk_2d.so
 lib/libnvddk_2d_v2.so
 lib/libnvfusebypass.so
 lib/libnvglsi.so
+lib/libnvmm_asfparser.so
 lib/libnvmm_audio.so
+lib/libnvmm_aviparser.so
 lib/libnvmm_contentpipe.so
 lib/libnvmm_image.so
 lib/libnvmmlite_audio.so
@@ -74,6 +78,9 @@ lib/libnvmm_utils.so
 lib/libnvmm_vc1_video.so
 lib/libnvmm_video.so
 lib/libnvmm_writer.so
+lib/libnvodm_dtvtuner.so
+lib/libnvodm_hdmi.so
+lib/libnvodm_misc.so
 lib/libnvodm_query.so
 lib/libnvoice.so
 lib/libnvomxadaptor.so
