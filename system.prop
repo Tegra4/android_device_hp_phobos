@@ -24,7 +24,7 @@ ro.hwui.text_small_cache_width=1024
 ro.hwui.text_small_cache_height=512
 ro.hwui.text_large_cache_width=2048
 ro.hwui.text_large_cache_height=1024
-ro.hwui.texture_cache_flushrate=0.4
+ro.hwui.texture_cache_flushrate=0.6
 
 # don't preload OpenGL in Zygote, the Tegra drivers do not like it
 ro.zygote.disable_gl_preload=true
