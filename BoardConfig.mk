@@ -36,6 +36,9 @@ BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
 TARGET_KERNEL_SOURCE := kernel/hp/phobos
 TARGET_KERNEL_CONFIG := cyanogenmod_phobos_defconfig
 
+# Audio
+USE_LEGACY_AUDIO_POLICY := 1
+
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
